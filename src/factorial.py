@@ -6,13 +6,13 @@ def factorial(num):
         parametres d'eixida: factorial del numero
         aquesta funcio retorna el factorial del numero que se li passa a la funció 
     """
-    if isinstance(num,int):
-        if num>0:
-            if num==1:
-                return 1
-            resultat = 1
-            for i in range(2, num + 1):
-                resultat *= i
-            return resultat
+    if not isinstance(num,int):
+        raise TypeError("Sols es poden introduir numeros")
+    if num<0:
         raise ValueError("No poden introduir numeros negatius")
-    raise TypeError("Sols es poden introduir numeros")
+    if num==1:
+        return 1
+    resultat = 1
+    for i in range(2, num + 1):
+            resultat *= i
+    return resultat
