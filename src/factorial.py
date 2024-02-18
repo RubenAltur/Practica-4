@@ -1,5 +1,11 @@
-
+"""
+modul per a calcular el factorial d'un numero """
 def factorial(num):
+
+    """ parametres d'entrada: numero del que es vol saber el factorial
+        parametres d'eixida: factorial del numero
+        aquesta funcio retorna el factorial del numero que se li passa a la funció 
+    """
     if isinstance(num,int):
         if num>0:
             if num==1 or num==0:
@@ -14,3 +20,4 @@ def factorial(num):
             raise ValueError("No poden introduir numeros negatius")
     else: 
         raise TypeError("Sols es poden introduir numeros")
+    
