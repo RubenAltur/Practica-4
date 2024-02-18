@@ -16,5 +16,5 @@ def factorial(num):
             return resultat
         else:
             raise ValueError("No poden introduir numeros negatius")
-    else: 
+    else:
         raise TypeError("Sols es poden introduir numeros")
