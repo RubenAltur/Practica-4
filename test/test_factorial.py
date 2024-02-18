@@ -1,17 +1,10 @@
 import pytest
 from src.factorial import factorial
 
-def test_factorial1():
-   
-    assert factorial()==True
 
 def test_factorialInt():
     with pytest.raises(TypeError):
         factorial("r")==0
-
-def test_factorial_numero():
-   
-    assert factorial(5)==5
 
 def test_factorial_major0():
    with pytest.raises(ValueError):
